@@ -50,7 +50,7 @@ const SectionNavigation: React.FC = () => {
   };
 
   return (
-    <div className="fixed right-4 top-1/2 transform -translate-y-1/2 z-50 lg:left-6 lg:right-auto">
+    <div className="fixed left-6 top-24 z-50 lg:top-1/2 lg:transform lg:-translate-y-1/2">
       <div className="flex flex-col space-y-3 lg:space-y-4">
         {sections.map((section, index) => (
           <motion.button
@@ -70,10 +70,10 @@ const SectionNavigation: React.FC = () => {
             />
             
             {/* Tooltip con el nombre de la sección - solo en desktop */}
-            <div className="absolute right-8 lg:left-8 lg:right-auto px-3 py-1 bg-slate-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none hidden lg:block">
+            <div className="absolute left-8 px-3 py-1 bg-slate-800 text-white text-sm rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none hidden lg:block">
               {section.label}
               {/* Flecha del tooltip */}
-              <div className="absolute right-0 lg:left-0 lg:right-auto top-1/2 transform translate-x-1 lg:-translate-x-1 -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-l-4 lg:border-l-0 lg:border-r-4 border-transparent border-l-slate-800 lg:border-l-transparent lg:border-r-slate-800"></div>
+              <div className="absolute left-0 top-1/2 transform -translate-x-1 -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-r-4 border-transparent border-r-slate-800"></div>
             </div>
           </motion.button>
         ))}

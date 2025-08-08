@@ -180,17 +180,17 @@ const WhyChooseSection: React.FC = () => {
         <div className="flex items-center justify-center">
           <div className="relative flex">
             {/* Contenedor de imagen */}
-            <div className="w-[300px] h-[400px] sm:w-[500px] sm:h-[400px] lg:w-[700px] lg:h-[500px] rounded-3xl flex items-center justify-center relative overflow-visible shadow-2xl z-10">
+            <div className="w-[325px] h-[400px] sm:w-[500px] sm:h-[400px] lg:w-[700px] lg:h-[500px] rounded-3xl flex items-center justify-center relative overflow-visible shadow-2xl z-10">
               {/* Tags del lado izquierdo */}
-              <div className="flex flex-col gap-2 lg:gap-4 absolute left-0 z-0 -translate-x-1/2 sm:-translate-x-3/4 h-full">
-                <div className='flex flex-1 flex-col justify-between py-4 lg:py-8'>
+              <div className="flex flex-col gap-3 lg:gap-4 absolute left-0 z-0 -translate-x-2/3 sm:-translate-x-3/4 h-full">
+                <div className='flex flex-1 flex-col justify-between py-6 lg:py-8'>
                   {items.slice(0, 2).map((item) => (
                     <button
                       key={item.id}
                       onClick={() => handleItemClick(item.id)}
-                      className={`pr-2 sm:pr-4 py-2 sm:py-4 rounded-l-xl shadow-lg text-xs sm:text-sm font-semibold transition-all duration-300 cursor-pointer ${item.bgColor} flex flex-col items-center justify-center space-y-1 min-w-[40px] sm:min-w-[60px] hover:scale-105`}
+                      className={`pr-3 sm:pr-4 py-3 sm:py-4 rounded-l-xl shadow-lg text-sm sm:text-sm font-semibold transition-all duration-300 cursor-pointer ${item.bgColor} flex flex-col items-center justify-center space-y-1 min-w-[50px] sm:min-w-[60px] hover:scale-105`}
                     >
-                      <span className="text-sm sm:text-lg">{item.icon}</span>
+                      <span className="text-base sm:text-lg">{item.icon}</span>
                       <span className="whitespace-nowrap text-center leading-tight text-xs sm:text-sm" style={{ writingMode: 'vertical-lr' }}>{item.shortName}</span>
                     </button>
                   ))}
@@ -198,15 +198,15 @@ const WhyChooseSection: React.FC = () => {
               </div>
 
               {/* Tags del lado derecho */}
-              <div className="flex flex-col gap-2 lg:gap-4 absolute right-0 h-full z-5 translate-x-1/2 sm:translate-x-3/4">
-                <div className='flex flex-1 flex-col justify-between py-4 lg:py-8'>
+              <div className="flex flex-col gap-3 lg:gap-4 absolute right-0 h-full z-5 translate-x-2/3 sm:translate-x-3/4">
+                <div className='flex flex-1 flex-col justify-between py-6 lg:py-8'>
                   {items.slice(2, 4).map((item) => (
                     <button
                       key={item.id}
                       onClick={() => handleItemClick(item.id)}
-                      className={`pl-2 sm:pl-4 py-2 sm:py-4 rounded-r-xl shadow-lg text-xs sm:text-sm font-semibold transition-all duration-300 cursor-pointer ${item.bgColor} flex flex-col items-center justify-center space-y-1 min-w-[40px] sm:min-w-[60px] hover:scale-105`}
+                      className={`pl-3 sm:pl-4 py-3 sm:py-4 rounded-r-xl shadow-lg text-sm sm:text-sm font-semibold transition-all duration-300 cursor-pointer ${item.bgColor} flex flex-col items-center justify-center space-y-1 min-w-[50px] sm:min-w-[60px] hover:scale-105`}
                     >
-                      <span className="text-sm sm:text-lg">{item.icon}</span>
+                      <span className="text-base sm:text-lg">{item.icon}</span>
                       <span className="whitespace-nowrap text-center leading-tight text-xs sm:text-sm" style={{ writingMode: 'vertical-lr' }}>{item.shortName}</span>
                     </button>
                   ))}

@@ -1,0 +1,46 @@
+---
+import Layout from '../layout/Layout.astro';
+---
+
+<Layout 
+  title="Sobre Mí" 
+  description="Conoce más sobre Amanda Cabello Pino, abogada especialista en Marbella con más de 7 años de experiencia."
+  keywords="Amanda Cabello Pino, abogada Marbella, experiencia legal, formación jurídica"
+  currentPage="sobre-mi"
+>
+  <main class="pt-24 pb-16">
+    <div class="container mx-auto px-4 lg:px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h1 class="text-4xl lg:text-5xl font-bold text-primary-700 mb-6">
+            Sobre Mí
+          </h1>
+          <p class="text-xl text-gray-600">
+            Abogada especialista con más de 7 años de experiencia en Marbella
+          </p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <img src="/avatar.webp" alt="Amanda Cabello Pino" class="w-full max-w-md mx-auto rounded-lg shadow-lg" />
+          </div>
+          
+          <div class="space-y-6">
+            <h2 class="text-2xl font-bold text-primary-700">Mi Experiencia</h2>
+            <p class="text-gray-600 leading-relaxed">
+              Con más de 7 años de experiencia en el sector legal, me especializo en derecho procesal 
+              y asesoría jurídica para empresas y particulares en Marbella.
+            </p>
+            
+            <h3 class="text-xl font-semibold text-primary-600">Formación</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Universidad de Sevilla - Grado en Derecho</li>
+              <li>• Universidad de Málaga - Máster en Derecho Procesal</li>
+              <li>• INESEM Business School - Especialización</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

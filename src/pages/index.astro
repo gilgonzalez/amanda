@@ -1,16 +1,12 @@
 ---
-
+import Layout from '../layout/Layout.astro';
+import HeroSection from '../components/HeroSection.tsx';
+import ServicesSection from '../components/ServicesSection.tsx';
+import WhyChooseSection from '../components/WhyChooseSection';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Amanda Cabello Pino - Abogada Especializada">
+  <HeroSection client:load />
+  <ServicesSection client:load />
+  <WhyChooseSection client:load /> 
+</Layout>
